@@ -11,9 +11,9 @@ let package = Package(
         .watchOS(.v3)
     ],
     products: [
-        .library(name: "Moya", targets: ["Moya"]),
-        .library(name: "ReactiveMoya", targets: ["ReactiveMoya"]),
-        .library(name: "RxMoya", targets: ["RxMoya"])
+        .library(name: "Moya", type: .dynamic, targets: ["Moya"]),
+        .library(name: "ReactiveMoya", type: .dynamic, targets: ["ReactiveMoya"]),
+        .library(name: "RxMoya", type: .dynamic, targets: ["RxMoya"])
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.0.0")),
